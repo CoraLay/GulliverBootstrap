@@ -6,3 +6,11 @@
   --cor5: #00EAFF;
 }
 
+#language {
+  background-color: transparent;
+  border-color: transparent
+}
+
+#icon-language {
+  width: 1.8rem;
+}
