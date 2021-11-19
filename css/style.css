@@ -6,6 +6,16 @@
   --cor5: #00EAFF;
 }
 
+.language-div {
+  position: absolute;
+}
+
+#header {
+  background-image: url(/img/sp.jpg);
+  background-repeat: no-repeat;
+  background-size: cove
+}
+
 #language {
   background-color: transparent;
   border-color: transparent
@@ -13,4 +23,13 @@
 
 #icon-language {
   width: 1.8rem;
+}
+
+#title {
+  width:fit-content;
+  text-transform: uppercase;
+}
+
+#sp {
+  display: block;
 }
