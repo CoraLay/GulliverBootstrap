@@ -11,10 +11,9 @@
 }
 
 #header {
-  background-image: url(img/sp.jpg);
-  background-repeat: no-repeat;
+  background: url(../img/sp.jpg)  no-repeat ;
   background-size: cover;
-  height: 40vh;
+  min-height: 45vh;
 }
 
 #language {
