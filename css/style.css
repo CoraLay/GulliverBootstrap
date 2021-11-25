@@ -6,30 +6,74 @@
   --cor5: #00EAFF;
 }
 
-.language-div {
-  position: absolute;
+/***********************************
+        COMMON
+***********************************/
+
+header,
+button,
+a:visited {
+  color: white;
 }
+
+/***********************************
+        HEADER
+***********************************/
 
 #header {
   background: url(../img/sp.jpg)  no-repeat ;
   background-size: cover;
   min-height: 45vh;
+  display: flex;
+  flex-direction: column;
 }
 
-#language {
+#header .header-nav {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .language-div {
+  position: relative;
+}
+
+#header .language-div #icon-language {
+  width: 1.8rem;
+}
+
+#header .language-div #language {
   background-color: transparent;
   border-color: transparent
 }
 
-#icon-language {
-  width: 1.8rem;
-}
-
-#title {
+#header .container #title {
   width:fit-content;
   text-transform: uppercase;
+  margin-top: 3rem;
 }
 
-#sp {
+#header .container #sp {
   display: block;
+}
+
+#header .container .nav {
+  display: flex;
+  justify-content: space-evenly
+}
+
+#header .container .nav ul li a {
+  padding: 0.5rem ;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#header .container .nav ul li a:hover
+ {
+  border-bottom: 1px solid white;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.384)
 }
