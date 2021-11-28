@@ -1,16 +1,17 @@
 :root {
-  --cor1: #B34A00;
-  --cor2: #FF9F4F;
-  --cor3: #FF6C00;
-  --cor4: #00A3B3;
-  --cor5: #00EAFF;
+  --cor1: #b34a00;
+  --cor2: #ff9f4f;
+  --cor3: #ff6c00;
+  --cor4: #00a3b3;
+  --cor5: #00eaff;
 }
 
 /***********************************
         COMMON
 ***********************************/
 
-header,
+
+
 button,
 a:visited {
   color: white;
@@ -21,11 +22,12 @@ a:visited {
 ***********************************/
 
 #header {
-  background: url(../img/sp.jpg)  no-repeat ;
+  background: url(../img/sp.jpg) no-repeat;
   background-size: cover;
-  min-height: 45vh;
+  min-height: 39vh;
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 #header .header-nav {
@@ -40,40 +42,148 @@ a:visited {
   position: relative;
 }
 
+#header #language-menu li #pt {
+  color: black;
+}
+
 #header .language-div #icon-language {
   width: 1.8rem;
 }
 
 #header .language-div #language {
   background-color: transparent;
-  border-color: transparent
+  border-color: transparent;
 }
 
-#header .container #title {
-  width:fit-content;
+#header .header-nav #title {
+  width: fit-content;
   text-transform: uppercase;
   margin-top: 3rem;
 }
 
-#header .container #sp {
+#header .header-nav span:first-of-type {
+  font-size: 1.2rem;
+}
+
+#header .header-nav #sp {
   display: block;
+  font-weight: 700;
+  padding-top: 1rem;
 }
 
-#header .container .nav {
+#header .header-nav .nav {
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-#header .container .nav ul li a {
-  padding: 0.5rem ;
+#header .header-nav .nav ul li a {
+  color: white;
+  padding: 1.1rem;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-#header .container .nav ul li a:hover
- {
-  border-bottom: 1px solid white;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.384)
+#header .container .nav ul li a:hover {
+  color: var(--cor5);
+  border-radius: 5px;
+  text-shadow: 2px 2px 1px var(--cor4);
+
 }
+
+/***********************************
+        MAIN
+***********************************/
+
+#main {
+  padding: 0 10em;
+}
+
+#main .p-3 {
+  font-size: 1.2em;
+  color: var(--cor4)
+}
+
+#main .p-3 p span {
+  font-weight: 500;
+}
+
+#main .row form .form-line  {
+  margin: 2rem 0;
+
+}
+
+#main .row form .form-line  {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  color: var(--cor4);
+  font-weight: 700;
+}
+
+#main .row .col-6 {
+  margin: 0 auto;
+}
+
+#main .row .col-6 .card {
+  font-weight: 600;
+  margin: 15px auto;
+  max-width: 250px;
+  background-color: var(--cor1);
+  color: white;
+  transition: all 150ms;
+}
+
+#main .row .col-6 .card:hover {
+  color: var(--cor1);
+  background-color: var(--cor2)
+}
+
+
+#main h2 {
+  font-size: 1rem;
+}
+
+#main .col-3 {
+  max-width: 350px;
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  #main {
+    padding: 1rem;
+  }  
+
+  #main .row .col-6 .card {
+  margin: 5px auto;
+  max-width: 250px;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  #main {
+    text-align: center;
+  }
+
+  #main .principal {
+    display: inline-block;
+    text-align: center;
+  }
+
+  #main .principal .col-6,
+  #main .principal .col-3 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #main .principal .col-6 .row .col-sm-6 {
+    flex-direction: column;
+  }
+
+}
+

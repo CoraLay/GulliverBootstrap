@@ -17,39 +17,110 @@
 
 <body>
 
-  <main>
-
-    <header id="header" class="container-fluid">
-      <div class="language-div m-4">
-        <img id="icon-language" src="img/trad.png" alt="ícone de tradução de idioma">
-        <button class="dropdown-toggle" type="button" id="language" data-bs-toggle="dropdown" aria-expanded="false">
-          Idioma
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="language">
-          <li><a class="dropdown-item" href="#">Português</a></li>
-          <li><a class="dropdown-item" href="#">Inglês</a></li>
-          <li><a class="dropdown-item" href="#">Espanhol</a></li>
+  <header id="header" class="container-fluid">
+    <div class="language-div m-4">
+      <img id="icon-language" src="img/trad.png" alt="ícone de tradução de idioma">
+      <button class="dropdown-toggle" type="button" id="language" data-bs-toggle="dropdown" aria-expanded="false">
+        Idioma
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="language">
+        <li><a class="dropdown-item">Português</a></li>
+        <li><a class="dropdown-item">Inglês</a></li>
+        <li><a class="dropdown-item">Espanhol</a></li>
+      </ul>
+    </div>
+    <div class="container header-nav">
+      <div class="container" id="title">
+        <h1> <span>Conheça</span> <span id="sp" class="display-1">São Paulo</span> </h1>
+      </div>
+      <nav class="nav ">
+        <ul class="nav justify-content-around row">
+          <li class="col"><a href="#">Chegar</a></li>
+          <li class="col"><a href="#">Dicas</a></li>
+          <li class="col"><a href="#">Hotéis</a></li>
+          <li class="col"><a href="#">Locomoção</a></li>
+          <li class="col"><a href="#">História</a></li>
+          <li class="col"><a href="#">Cultura</a></li>
+          <li class="col"><a href="#">Gastronomia</a></li>
+          <li class="col"><a href="#">Vida Noturna</a></li>
+          <li class="col"><a href="#">Entretenimento</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id=main class="container-fluid text-center">
+    <div class="p-3">
+      <p>América do Sul > Brasil > São Paulo > <span>Como chegar</span></p>
+    </div>
+    <div class="row principal">
+      <div class="col-3">
+        <form action="">
+          <div class="form-line">
+            <label for="from">Origem:</label>
+            <input type="text" name="from" id="from" placeholder="Digite aqui o local de partida">
+          </div>
+          <div class="form-line">
+            <label for="to">Destino:</label>
+            <input type="text" name="to" placeholder="São Paulo, SP, Brasil">
+          </div>
+          <div class="form-line">
+            <button class="btn btn-secondary" type="button">Traçar rota</button>
+          </div>
+        </form>
       </div>
-      <div class="container header-nav">
-        <div class="container" id="title">
-          <h1> <span class="fs-4">Conheça</span> <span id="sp" class="display-1">São Paulo</span> </h1>
+      <div class="col-6">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Aeroporto de Congonhas</h2>
+                <a href="#"><img class="card-img" src="img/congonhas.jpg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Clima na cidade</h2>
+                <a href="#"><img class="card-img" src="img/clima.jpg" alt=""></a>
+              </div>
+            </div>
+          </div>  
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Bairros de São Paulo</h2>
+                <a href="#"><img class="card-img" src="img/bairros.jpg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Principais estações de trem e metrô</h2>
+                <a href="#"><img src="img/metro.jpg" alt="" class="card-img"></a>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <nav class="nav ">
-          <ul class="nav justify-content-around">
-            <li><a href="#">Como chegar</a></li>
-            <li><a href="#">Dicas úteis</a></li>
-            <li><a href="#">Hoteis</a></li>
-            <li><a href="#">Aluguel de carro</a></li>
-            <li><a href="#">História</a></li>
-            <li><a href="#">Cultura</a></li>
-            <li><a href="#">Gastronomia</a></li>
-            <li><a href="#">Vida Noturna</a></li>
-            <li><a href="#">Entretenimento</a></li>
-          </ul>
-        </nav>
       </div>
-    </header>
+      <div class="col-3">
+        <div class="card">
+          <div class="card-body">
+            <p>São Paulo é uma cidade conhecida por ser o principal centro financeiro, comercial e mercantil da America Latina, possui
+            uma malha ferroviária invejável e conta com o aeroporto de congonhas e a estação rodoviária do Tietê, sendo uma cidade
+            de fácil acesso de qualquer lugar do país.
+            
+            Curabitur efficitur dapibus ante ac eleifend. Donec ac auctor neque. Curabitur fringilla lacus ac velit fringilla
+            rhoncus. Praesent cursus eros neque. Phasellus sagittis lorem nisi, at laoreet urna ullamcorper vel. Curabitur auctor
+            felis sollicitudin ipsum dapibus, vitae volutpat nunc venenatis. Maecenas consectetur ipsum eget nisi tincidunt, eu
+            faucibus risus scelerisque.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
 
