@@ -98,19 +98,13 @@ a:visited {
   font-size: 6rem;
 }
 
-#header .header-nav .nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 #header .header-nav .nav ul li a {
   color: white;
-  padding: 1.1rem;
+  padding: 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.8rem;
+  font-weight: 600;
+  font-size: 0.8rem;  
 }
 
 #header .header-nav .nav ul li a:hover {
@@ -129,17 +123,20 @@ a:visited {
 }
 
 #main .p-3 {
-  color: white;
+  color: rgb(173, 173, 173);
 }
 
 #main .p-3 p .separator {
-  color: var(--cor5);
+  color: var(--cor4);
+}
+
+#main .p-3 p {
+  font-weight: 100;
 }
 
 #main .p-3 p span {
-  font-weight: 500;
+  font-weight: 400;
 }
-
 
 #main .row form .form-line input,
 button {
@@ -172,22 +169,22 @@ button {
 }
 
 #main .row .col-6 .card {
-  font-weight: 600;
   margin: 15px auto;
   max-width: 250px;
   background-color: transparent;
-  color: white;
+  color: #00eaff;
   transition: all 500ms;
   border-color: transparent;
 }
 
 #main .row .col-6 .card:hover {
-  color: black;
-  background-color: var(--cor5);
+  color: rgb(255, 255, 255);
+  background-color: #00eaff73;
 }
 
 #main h2 {
   font-size: 1rem;
+  font-weight: 400;
 }
 
 #main .col-3 .card {
