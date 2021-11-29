@@ -64,11 +64,15 @@ a:visited {
   margin-top: 3rem;
 }
 
+#header .header-nav #title h1 {
+  font-size: 1.5rem;
+}
+
 #header .header-nav #sp {
   display: block;
   font-weight: 700;
   padding-top: 1rem;
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 #header .header-nav .nav {
@@ -83,13 +87,13 @@ a:visited {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 #header .header-nav .nav ul li a:hover {
   color: var(--cor5);
   border-radius: 5px;
-  text-shadow: 2px 2px 1px var(--cor4);
+  text-shadow: 2px 2px 1px #00a4b38a;
 }
 
 /***********************************
@@ -114,6 +118,7 @@ button {
   border-radius: 5px;
   border-color: var(--cor4);
   box-shadow: 3px 3px 5px #00000065;
+  max-width: 100%;
 }
 
 #main .row form .form-line {
@@ -154,9 +159,20 @@ button {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-  #header .header-nav #title h1 {
-    font-size: 2rem;
+@media only screen and (max-width: 1200px) {
+  #main {
+    padding: 10px;
+  }
+
+  #main .row .col-6 .card {
+    margin: 5px auto;
+    max-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #header .header-nav #title h1 #sp {
+    font-size: 4rem;
   }
 
   #main {
@@ -172,6 +188,11 @@ button {
   #main .principal .col-3 {
     text-align: center;
     margin: 0 auto;
+    width: 100%;
+  }
+
+  #main .principal .col-3 form .form-line {
+    text-align: center;
   }
 
   #main .principal .col-6 .row .col-sm-6 {
@@ -179,17 +200,4 @@ button {
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  #header .header-nav #sp {
-    font-size: 4rem;
-  }
 
-  #main {
-    padding: 1rem;
-  }
-
-  #main .row .col-6 .card {
-    margin: 5px auto;
-    max-width: 250px;
-  }
-}
